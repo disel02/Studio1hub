@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_view_profile"
+            android:icon="@drawable/ic_contacts_black_24dp"
+            android:title="View Profile" />
+    </group>
+
+    <item android:title="Project">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_uploaded_projects"
+                android:icon="@drawable/ic_assign"
+                android:title="Uploaded Projects" />
+                <item
+                    android:id="@+id/nav_req_projects"
+                    android:icon="@drawable/ic_assign"
+                    android:title="Req.Material Projects" />
+            <item
+                android:id="@+id/nav_inprogress_projects"
+                android:icon="@drawable/ic_inprogress"
+                android:title="Inprogress Projects" />
+            <item
+                android:id="@+id/nav_received_projects"
+                android:icon="@drawable/ic_upload"
+                android:title="Received Projects" />
+            <item
+                android:id="@+id/nav_completed_projects"
+                android:icon="@drawable/ic_complete"
+                android:title="Completed Projects" />
+            <item
+                android:id="@+id/nav_canceled_projects"
+                android:icon="@drawable/ic_cancel"
+                android:title="Canceled Projects" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Payment">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_payment_received"
+                android:icon="@drawable/ic_credit_card"
+                android:title="Payment Remain" />
+            <item
+                android:id="@+id/nav_payment_paid"
+                android:icon="@drawable/ic_credit_card"
+                android:title="Payment Paid" />
+            <item
+                android:id="@+id/nav_payment_refund"
+                android:icon="@drawable/ic_credit_card"
+                android:title="Payment Refund" />
+            <item
+                android:id="@+id/nav_payment_master"
+                android:icon="@drawable/ic_project_master"
+                android:title="Payment Master" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

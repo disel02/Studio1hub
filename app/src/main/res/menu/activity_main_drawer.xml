@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Employee">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_add_emp"
+                android:icon="@drawable/ic_add_employee"
+                android:title="Add Employee" />
+            <item
+                android:id="@+id/nav_emp_management"
+                android:icon="@drawable/ic_emp_management"
+                android:title="Employee Management" />
+                <item
+                    android:id="@+id/nav_emp_verification"
+                    android:icon="@drawable/ic_verified_user_black_24dp"
+                    android:title="Employee Verification" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Customer">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_add_cust"
+                android:icon="@drawable/ic_add_employee"
+                android:title="Add Customer" />
+            <item
+                android:id="@+id/nav_cust_management"
+                android:icon="@drawable/ic_emp_management"
+                android:title="Customer Management" />
+                <item
+                    android:id="@+id/nav_cust_verification"
+                    android:icon="@drawable/ic_verified_user_black_24dp"
+                    android:title="Customer Verification" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Projects">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_add_project"
+                android:icon="@drawable/ic_add_project"
+                android:title="Add Project" />
+            <item
+                android:id="@+id/nav_project_master"
+                android:icon="@drawable/ic_project_master"
+                android:title="Project Master" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Payment">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_add_payment"
+                android:icon="@drawable/ic_credit_card"
+                android:title="Add Payment" />
+            <item
+                android:id="@+id/nav_show_payment"
+                android:icon="@drawable/ic_credit_card"
+                android:title="Show Payment" />
+            <item
+                android:id="@+id/nav_payment_master"
+                android:icon="@drawable/ic_project_master"
+                android:title="Payment Master" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Reports">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:title="Feedback" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

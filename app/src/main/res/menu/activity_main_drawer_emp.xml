@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_view_profile"
+            android:icon="@drawable/ic_contacts_black_24dp"
+            android:title="View Profile" />
+        <item
+            android:id="@+id/nav_leave_apply"
+            android:icon="@drawable/ic_leave_apply"
+            android:title="Leave Apply" />
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/ic_attendance"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/nav_payment_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Payment History" />
+    </group>
+
+    <item android:title="Project">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_current_project"
+                    android:icon="@drawable/ic_assign"
+                    android:title="Current Project" />
+            <item
+                android:id="@+id/nav_assigned_projects"
+                android:icon="@drawable/ic_assign"
+                android:title="Assigned Projects" />
+                <item
+                    android:id="@+id/nav_req_projects"
+                    android:icon="@drawable/ic_upload"
+                    android:title="Req.Material Projects" />
+            <item
+                android:id="@+id/nav_inprogress_projects"
+                android:icon="@drawable/ic_inprogress"
+                android:title="Inprogress Projects" />
+            <item
+                android:id="@+id/nav_completed_projects"
+                android:icon="@drawable/ic_complete"
+                android:title="Completed Projects" />
+            <item
+                android:id="@+id/nav_canceled_projects"
+                android:icon="@drawable/ic_cancel"
+                android:title="Canceled Projects" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="User Id :" />
+
+                <TextView
+                    android:id="@+id/tvid"
+                    style="@style/view_profile_text"
+                    android:text="" />
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="Name :" />
+
+                <TextView
+                    android:id="@+id/tvname"
+                    style="@style/view_profile_text"
+                    android:text="" />
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="Date of Birth :" />
+
+                <TextView
+                    android:id="@+id/tvdob"
+                    style="@style/view_profile_text"
+                    android:text="" />
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="Phone :" />
+
+                <TextView
+                    android:id="@+id/tvphone"
+                    style="@style/view_profile_text"
+                    android:text="" />
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="Email Id :" />
+
+                <TextView
+                    android:id="@+id/tvemail"
+                    style="@style/view_profile_text"
+                    android:text="" />
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="Address :" />
+
+                <TextView
+                    android:id="@+id/tvaddress"
+                    style="@style/view_profile_text"
+                    android:text="" />
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="City :" />
+
+                <TextView
+                    android:id="@+id/tvcity"
+                    style="@style/view_profile_text"
+                    android:text="" />
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="Pincode :" />
+
+                <TextView
+                    android:id="@+id/tvpincode"
+                    style="@style/view_profile_text"
+                    android:text="" />
+
+                <TextView
+                    style="@style/view_profile"
+                    android:text="Country :" />
+
+                <TextView
+                    android:id="@+id/tvcountry"
+                    style="@style/view_profile_text"
+                    android:text="" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/orange"
+            android:elevation="3dp"
+            android:fontFamily="@font/raleway"
+            android:lineSpacingExtra="8sp"
+            android:text="Change Request"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+</RelativeLayout>

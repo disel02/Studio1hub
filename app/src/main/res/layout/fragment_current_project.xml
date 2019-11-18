@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/grey"
+                android:text="Choose current project :"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:textColor="@color/grey"
+                    android:id="@+id/tvproject"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnpick"
+                    android:text="pick"
+                    android:textColor="@color/white"
+                    android:background="@color/lightgrey"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+    <Button
+        android:elevation="3dp"
+        android:fontFamily="@font/raleway"
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/orange"
+        android:lineSpacingExtra="8sp"
+        android:text="Change"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/pbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+</RelativeLayout>

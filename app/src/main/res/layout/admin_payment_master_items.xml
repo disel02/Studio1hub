@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvpyid"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        style="@style/empItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:text="" />
+
+    <View
+        android:id="@+id/SplitLine_hor2"
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tvpyname"
+        style="@style/empItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:paddingLeft="10dp"
+        android:text="" />
+
+    <View
+        android:id="@+id/SplitLine_hor3"
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tvmode1"
+        style="@style/empItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="" />
+
+    <View
+        android:id="@+id/SplitLine_hor4"
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tvmode2"
+        style="@style/empItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="" />
+
+    <View
+        android:id="@+id/SplitLine_hor5"
+        android:layout_width="0.3dp"
+        android:layout_height="match_parent"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tvmode3"
+        style="@style/empItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="" />
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/tvdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway"
+                android:text="Fill Payment Detail"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvcust"
+                    style="@style/view_profile"
+                    android:text="Customer Name :  " />
+
+                <TextView
+                    android:id="@+id/tvcustid"
+                    style="@style/view_profile"
+                    android:text=""
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etcid"
+                    style="@style/edittext"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:hint="Customer ID"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+                <Button
+                    android:id="@+id/btncust"
+                    style="@style/edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.2"
+                    android:background="@color/lightgrey"
+                    android:gravity="center"
+                    android:paddingLeft="0dp"
+                    android:text="pick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvproject"
+                    style="@style/view_profile"
+                    android:text="Project Name :  " />
+
+                <TextView
+                    android:id="@+id/tvprojectid"
+                    style="@style/view_profile"
+                    android:text=""
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etpid"
+                    style="@style/edittext"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:hint="Project ID"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+                <Button
+                    android:id="@+id/btnproject"
+                    style="@style/edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.2"
+                    android:background="@color/lightgrey"
+                    android:gravity="center"
+                    android:paddingLeft="0dp"
+                    android:text="pick" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/view_profile"
+                android:text="Amount :" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/etamount"
+                style="@style/edittext"
+                android:hint="Rs." />
+            <TextView
+                style="@style/view_profile"
+                android:text="Date :" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:inputType="date"
+                    android:id="@+id/etdate"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    style="@style/edittext"
+                    android:hint="--/--/----" />
+                <Button
+                    android:id="@+id/btnsetdate"
+                    android:paddingLeft="0dp"
+                    android:gravity="center"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    style="@style/edittext"
+                    android:background="@color/lightgrey"
+                    android:text="pick"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/orange"
+                android:elevation="3dp"
+                android:fontFamily="@font/raleway"
+                android:lineSpacingExtra="8sp"
+                android:text="submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            <LinearLayout
+                android:id="@+id/llhide"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <Button
+                    android:id="@+id/btndeletepayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/orange"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btneditpayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/orange"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/pbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+</RelativeLayout>
